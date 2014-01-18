@@ -21,27 +21,27 @@ COLORS
 Color Variables
 ------------------------------------------- */
 
-$darkColor: ;
-$bodyColor: ;
-$linkColor: ;
-$borderColor: ;
-$jazzColor: ;
-$alertColor: ;
+// $darkColor: ;
+// $bodyColor: ;
+// $linkColor: ;
+// $borderColor: ;
+// $jazzColor: ;
+// $alertColor: ;
 
 
 
-/*
+// /*
 
-SPACING
--------------------------------------------
-@spacing
+// SPACING
+// -------------------------------------------
+// @spacing
 
-Spacing Variables
-------------------------------------------- */
+// Spacing Variables
+// ------------------------------------------- */
 
-$spacing-xxs: ;
-$spacing-xs: ;
-$spacing-s: ;
-$spacing-m: ;
-$spacing-l: ;
-$spacing-xl: ;
+$spacing-xxs: percentage(10/940);
+$spacing-xs: percentage(15/940);
+$spacing-s: percentage(20/940);
+$spacing-m: percentage(30/940);
+$spacing-l: percentage(40/940);
+$spacing-xl: percentage(50/940);

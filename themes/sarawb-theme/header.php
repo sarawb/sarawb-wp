@@ -3,9 +3,9 @@
 
 <head>
 
-  <!-- 
+  <!--
 
-  @@@@@@@@@@@@@@@@@  @@@   @@@          @@@ 
+  @@@@@@@@@@@@@@@@@  @@@   @@@          @@@
   @@@@@@@@@@@@@@@@@  @@@   @@@@        @@@@
          @@@         @@@   @@@ @      @ @@@
          @@@         @@@   @@@  @@  @@  @@@
@@ -26,16 +26,41 @@
   <title><?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  
+
   <!-- My styles -->
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/assets/css/global.css"/>
 
   <!-- Typekit Code -->
+  <script type="text/javascript" src="//use.typekit.net/tko8fpq.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 
   <!--WP Generated Header -->
   <?php wp_head(); ?>
   <!--End WP Generated Header -->
-  
+
 </head>
 <body <?php body_class($class); ?>>
+
+<header class="site__header" role="banner">
+  <div class="contain">
+    <div class="site__branding left">
+      <img src="http://placehold.it/200x45" alt="">
+    </div>
+
+    <div class="nav_and_search grid7 right">
+      <nav class="site__nav left" role="navigation">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <div class="site__search right">
+        <?php get_search_form(); ?>
+      </div>
+    </div><!-- .nav_and_search -->
+  </div><!-- .contain -->
+</header>
+
+<main class="site__content" role="main">
+  <div class="contain">

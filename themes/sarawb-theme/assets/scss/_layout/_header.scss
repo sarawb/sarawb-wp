@@ -1,0 +1,16 @@
+/*
+
+HEADER
+---------------------------------------------------------
+
+*/
+
+.site__header {
+  background: #1b1b1b;
+  padding: $spacing-xs 0;
+}
+
+.site__branding {
+  @extend .grid3;
+  @extend .left;
+}

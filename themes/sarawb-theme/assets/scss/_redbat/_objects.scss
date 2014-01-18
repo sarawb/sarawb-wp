@@ -4,3 +4,87 @@ OBJECTS
 -------------------------------------------
 
 */
+
+.contain {
+  max-width: 940px;
+  margin: 0 auto;
+  width: 100%;
+  @extend %clearfix;
+}
+
+
+/* Grid
+------------------------------------------- */
+
+.columns {
+  margin-right: percentage(20/940);
+  &:last-child {
+    margin-right: 0;
+    @extend .right;
+  }
+}
+
+%no-margin {
+  margin: 0;
+}
+
+.grid1 {
+  width: 06.3829787%;
+}
+
+.grid2 {
+  width: 14.893617%;
+}
+
+.grid3 {
+  width: 23.4042553%;
+}
+
+.grid4 {
+  width: 31.9148936%;
+}
+
+.grid5 {
+  width: 40.4255319%;
+}
+
+.grid6 {
+  width: 48.9361702%;
+}
+
+.grid7 {
+  width: 57.4468085%;
+}
+
+.grid8 {
+  width: 65.9574468%;
+}
+
+.grid9 {
+  width: 74.4680851%;
+}
+
+.grid10 {
+  width: 82.9787234%;
+}
+
+.grid11 {
+  width: 91.4893617%;
+}
+
+.grid12 {
+  width: 100%;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.centered {
+  @extend %clearfix;
+  margin: 0 auto;
+}

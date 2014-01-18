@@ -1,0 +1,29 @@
+# --- Ignore uploads
+
+/wp-content/uploads/
+
+# --- Ignore globally
+
+*wp-config.php
+
+# --- Allow globaly
+
+!*.gitignore
+!*.gitkeep
+
+# --- Ignore OS generated files
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# --- Ignore Vim generated files
+*.swp
+
+
+.sass-cache

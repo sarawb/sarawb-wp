@@ -1,4 +1,6 @@
 
+  </div><!-- contain -->
+</main>
 
 <!--WP Generated Footer -->
 <?php wp_footer(); ?>
@@ -6,4 +8,4 @@
 
 </body>
 
-</html> 
+</html>
