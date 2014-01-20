@@ -1,0 +1,15 @@
+
+.post__meta {
+  margin: 0 0 2em;
+}
+
+.post__title {
+  margin-bottom: .4em;
+}
+
+.pubdate {
+  color: lighten($headingColor, 35%);
+  font-size: 85%;
+  margin: 0 0 .8em;
+  @extend %secondarytype;
+}

@@ -31,7 +31,8 @@ BASE TYPE
 body {
 	font-size: 110%;
 	line-height: 140%;
-	// color: $bodyColor;
+	color: $bodyColor;
+	@extend %primarytype;
 }
 
 // TYPE SIZE VARIABLES
@@ -42,10 +43,10 @@ $text-size-m: 1em;
 $text-size-l: 1.5em;
 $text-size-xl: 2em;
 
-%heading-size-s { font-size: .95em;}
-%heading-size-m { font-size: 1.25em;}
-%heading-size-l { font-size: 1.5em;}
-%heading-size-xl { font-size: 2em;}
+$heading-size-s: .95em;
+$heading-size-m: 1.25em;
+$heading-size-l: 1.35em;
+$heading-size-xl: 2em;
 
 
 /*
@@ -53,13 +54,14 @@ $text-size-xl: 2em;
 FONTS
 ------------------------------------------- */
 
-// %sans {
-// 	font-family: ;
-// }
+%secondarytype {
+	// font-family: "adelle-sans",sans-serif;
+	font-family: "jaf-facitweb",sans-serif;
+}
 
-// %serif {
-// 	font-family: ;
-// }
+%primarytype {
+	font-family: "ff-meta-serif-web-pro",serif;
+}
 
 
 /*
@@ -67,12 +69,39 @@ FONTS
 HEADINGS
 ------------------------------------------- */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@extend %secondarytype;
+	color: $headingColor;
+	margin: 2em 0 .4em;
+}
+
+h1 {
+	font-size: $heading-size-xl;
+	// font-weight: 800;
+	margin: 0 0 .8em;
+}
+
+h2 {
+	font-size: $heading-size-l;
+	font-weight: 700;
+}
+
 
 /*
 
 TEXT
 ------------------------------------------- */
-
+p {
+	font-size: 1.1em;
+	line-height: 135%;
+	margin: 0 0 .9em;
+	// text-indent: 1.5em;
+}
 
 /*
 
@@ -116,7 +145,13 @@ hr {
 
 LINKS
 ------------------------------------------- */
-
+a {
+	color: $linkColor;
+	@include transition(.2s ease-in-out);
+	&:hover {
+		color: darken($linkColor, 5%);
+	}
+}
 
 /*
 

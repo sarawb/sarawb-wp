@@ -4,3 +4,48 @@ FORMS
 -------------------------------------------
 
 */
+
+// Search
+
+.site__search {
+  input {
+    background: white;
+    border: 1px solid $borderColor;
+    border-radius: 3px;
+    padding: $spacing-l $spacing-xl;
+    @include transition(.2s ease-in-out);
+    &:focus {
+      // box-shadow: inset 1px 1px 2px rgba(black, .1), 0 0 3px $darkColor;
+      border-color: darken($borderColor, 10%);
+    }
+  }
+}
+
+
+
+input:focus::-webkit-input-placeholder {
+        color: lighten($bodyColor, 40%);
+}
+
+::-webkit-input-placeholder {
+   color: lighten($bodyColor, 30%);
+   @include transition(all .2s ease-in-out);
+}
+
+input:focus:-moz-placeholder {
+        color: lighten($bodyColor, 40%);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: lighten($bodyColor, 30%);
+   @include transition(all .2s ease-in-out);
+}
+
+input:focus::-moz-placeholder {
+        color: lighten($bodyColor, 40%);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: lighten($bodyColor, 30%);
+   @include transition(all .2s ease-in-out);
+}

@@ -6,11 +6,49 @@ HEADER
 */
 
 .site__header {
-  background: #1b1b1b;
+  font-size: 85%;
   padding: $spacing-xs 0;
+  margin: 0 0 $spacing-l;
+  @extend %secondarytype;
+  // .contain {
+  //   border-bottom: 5px solid $darkColor;
+  //   padding-bottom: $spacing-l;
+  // }
 }
 
 .site__branding {
-  @extend .grid3;
+  @extend .grid2;
   @extend .left;
+  img {
+    float: left;
+    margin-right: $spacing-xl;
+  }
+  h1 {
+    color: white;
+    font-weight: 800;
+    margin: $spacing-l 0 0;
+  }
+}
+
+.site__nav {
+  margin: percentage(85/940) $spacing-xl 0 0;
+  ul {
+    @extend %clearfix;
+    white-space: nowrap;
+    li {
+      // float: left;
+      display: inline;
+      margin-right: $spacing-xl;
+      a {
+        color: lighten($bodyColor, 20%);
+        &:hover {
+          color: $linkColor;
+        }
+      }
+    }
+  }
+}
+
+.site__search {
+  margin: percentage(70/940) 0 0;
 }
