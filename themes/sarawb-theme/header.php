@@ -45,19 +45,19 @@
 <header class="site__header" role="banner">
   <div class="contain">
     <div class="site__branding left">
-      <img src="http://placehold.it/200x45" alt="">
+      <img src="<?php bloginfo('template_url'); ?>/assets/img/SWB_Logo.svg" alt="Sara Wachter-Boettcher" width="90">
     </div>
 
-    <div class="nav_and_search grid7 right">
-      <nav class="site__nav left" role="navigation">
+    <div class="nav_and_search grid5 right">
+      <div class="site__search right">
+        <?php get_search_form(); ?>
+      </div>
+      <nav class="site__nav right" role="navigation">
         <ul>
           <li><a href="#">About</a></li>
           <li><a href="#">Blog</a></li>
         </ul>
       </nav>
-      <div class="site__search right">
-        <?php get_search_form(); ?>
-      </div>
     </div><!-- .nav_and_search -->
   </div><!-- .contain -->
 </header>
