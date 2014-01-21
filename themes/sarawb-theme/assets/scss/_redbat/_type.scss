@@ -98,7 +98,7 @@ TEXT
 ------------------------------------------- */
 p {
 	font-size: 1.1em;
-	line-height: 135%;
+	line-height: 145%;
 	margin: 0 0 .9em;
 	// text-indent: 1.5em;
 }
@@ -121,7 +121,15 @@ em {
 
 BLOCKQUOTE
 ------------------------------------------- */
-
+blockquote {
+	border-left: 2px solid $darkColor;
+	margin-left: $spacing-m;
+	padding-left: $spacing-m;
+	p {
+		color: lighten($bodyColor, 15%);
+		font-style: italic;
+	}
+}
 
 /*
 
@@ -129,15 +137,13 @@ HR
 ------------------------------------------- */
 
 hr {
-	// border: solid $borderColor;
-	border-width: 5px 0 0;
+	border: solid $borderColor;
+	border-width: 1px 0 0;
 	clear: both;
-	// margin: $spacing-m auto;
+	margin: $spacing-xl auto;
 	height: 0;
 	width: auto;
-	max-width: 350px;
 	display: block;
-	padding: 0;
 }
 
 
