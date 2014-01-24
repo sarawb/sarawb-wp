@@ -39,8 +39,9 @@
       </article>
 
       <section class="comments">
-        <h5>Comments</h5>
-        <?php wp_list_comments(); ?>
+        <div>
+          <?php comments_template(); ?>
+        </div>
 
         <?php comment_form(); ?>
       </section>
