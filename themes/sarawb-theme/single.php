@@ -34,6 +34,7 @@
           <div class="post__newsletter">
             <h5>Get my blog posts, straight to your inbox</h5>
             <!-- FIXME: Input Goes Here --> Input Goes here
+            <?php dynamic_sidebar( 'email-subscription' ); ?>
           </div>
           <hr>
         </footer>
