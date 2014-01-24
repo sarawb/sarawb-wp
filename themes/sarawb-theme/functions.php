@@ -81,6 +81,6 @@ register_sidebar( array(
     'id' => 'email-subscription',
     'before_widget' => '<div class="jetpack-email">',
     'after_widget' => '</div>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>'
+    'before_title' => '<h5>',
+    'after_title' => '</h5>'
 ) );

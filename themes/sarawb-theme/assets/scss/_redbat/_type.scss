@@ -43,7 +43,10 @@ $text-size-m: 1em;
 $text-size-l: 1.5em;
 $text-size-xl: 2em;
 
-$heading-size-s: .95em;
+
+$heading-size-xxs: .9em;
+$heading-size-xs: .95em;
+$heading-size-s: 1.1em;
 $heading-size-m: 1.25em;
 $heading-size-l: 1.35em;
 $heading-size-xl: 2em;
@@ -77,18 +80,34 @@ h5,
 h6 {
 	@extend %secondarytype;
 	color: $headingColor;
+	font-weight: 700;
 	margin: 2em 0 .4em;
 }
 
 h1 {
 	font-size: $heading-size-xl;
-	// font-weight: 800;
+	font-weight: normal;
 	margin: 0 0 .8em;
 }
 
 h2 {
 	font-size: $heading-size-l;
-	font-weight: 700;
+}
+
+h3 {
+	font-size: $heading-size-m;
+}
+
+h4 {
+	font-size: $heading-size-s;
+}
+
+h5 {
+	font-size: $heading-size-xs;
+}
+
+h6 {
+	font-size: $heading-size-xxs;
 }
 
 
