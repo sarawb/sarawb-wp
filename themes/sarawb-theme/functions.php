@@ -75,3 +75,12 @@ function custom_excerpt_length( $length ) {
   return 35;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+register_sidebar( array(
+    'name' => 'Email Subscription',
+    'id' => 'email-subscription',
+    'before_widget' => '<div class="jetpack-email">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>'
+) );
