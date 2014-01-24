@@ -25,7 +25,6 @@ FORMS
 // Email
 
 .post__newsletter {
-  font-size: 95%;
   @extend %secondarytype;
 }
 
@@ -40,8 +39,9 @@ FORMS
   border: 1px solid $borderColor;
   border-radius: 3px;
   color: lighten($bodyColor, 30%);
-  padding: 10px 15px;
-  width: 100%;
+  font-size: 90%;
+  padding: 10px 15px !important;
+  width: 100% !important;
   @include transition(.2s ease-in-out);
   &:focus {
     border-color: darken($borderColor, 10%);
@@ -59,6 +59,7 @@ FORMS
   background: $darkColor;
   color: white;
   border-radius: 3px;
+  font-size: 90%;
   padding: 10px 15px;
   width: 100%;
   @include transition(.2s ease-in-out);
