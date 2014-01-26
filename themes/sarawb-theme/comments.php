@@ -30,12 +30,14 @@
 
   <?php if ( have_comments() ) : ?>
 
-  <h5><?php comments_number(); ?></h5>
+  <h3><?php comments_number(); ?></h3>
 
   <ol>
     <?php
         wp_list_comments( array(
-          'avatar_size' => 74,
+          'style' => 'ol',
+          'avatar_size' => 50,
+          'type' => 'comment',
         ) );
       ?>
   </ol>
