@@ -2,7 +2,7 @@
 
   <?php the_post(); ?>
 
-    <div class="grid8 centered">
+    <div class="grid7 centered">
       <article class="entry">
         <header class="post__meta">
           <h1 class="post__title"><?php the_title(); ?></h1>
@@ -42,8 +42,6 @@
         <div>
           <?php comments_template(); ?>
         </div>
-
-        <?php comment_form(); ?>
       </section>
     </div><!-- grid8 centered -->
 
