@@ -5,10 +5,19 @@ OBJECTS
 
 */
 
+body {
+  background: $borderColor;
+}
+
 .contain {
   max-width: 940px;
   margin: 0 auto;
   width: 100%;
+  @extend %clearfix;
+}
+
+.content__section {
+  margin: 0 0 $spacing-m;
   @extend %clearfix;
 }
 
@@ -17,6 +26,7 @@ OBJECTS
 ------------------------------------------- */
 
 .columns {
+  float: left;
   margin-right: percentage(20/940);
   &:last-child {
     margin-right: 0;
