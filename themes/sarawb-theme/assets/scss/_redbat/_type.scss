@@ -30,7 +30,7 @@ BASE TYPE
 
 body {
 	font-size: 110%;
-	line-height: 140%;
+	line-height: 160%;
 	color: $bodyColor;
 	@extend %primarytype;
 }
@@ -82,6 +82,9 @@ h6 {
 	color: $headingColor;
 	font-weight: 700;
 	margin: 2em 0 .4em;
+	a {
+		text-decoration: none !important;
+	}
 }
 
 h1 {
@@ -118,10 +121,17 @@ TEXT
 p {
 	font-size: 1.1em;
 	line-height: 145%;
-	margin: 0 0 .9em;
+	margin: 0 0 $spacing-l;
 	// text-indent: 1.5em;
 }
 
+ul {
+	margin: 0 0 $spacing-l $spacing-xl;
+	list-style-type: square;
+	li {
+		margin: 0 0 $spacing-xxs;
+	}
+}
 /*
 
 INLINE TYPE
@@ -172,6 +182,7 @@ LINKS
 ------------------------------------------- */
 a {
 	color: $linkColor;
+	text-decoration: underline !important;
 	@include transition(.2s ease-in-out);
 	&:hover {
 		color: darken($linkColor, 5%);
