@@ -6,9 +6,9 @@ HEADER
 */
 
 .site__header {
+  background: $darkColor;
   font-size: 85%;
   padding: $spacing-xs 0;
-  margin: 0 0 $spacing-l;
   @extend %secondarytype;
   // .contain {
   //   border-bottom: 5px solid $darkColor;
@@ -31,18 +31,20 @@ HEADER
 }
 
 .site__nav {
-  margin: percentage(85/940) $spacing-xl 0 0;
+  margin: percentage(82/940) percentage(60/940) 0 0;
   ul {
     @extend %clearfix;
     white-space: nowrap;
     li {
       // float: left;
       display: inline;
-      margin-right: $spacing-xl;
+      margin-right: percentage(90/940);
       a {
-        color: lighten($bodyColor, 20%);
+        color: darken($darkColor, 20%);
+        font-weight: 700;
+        text-decoration: none !important;
         &:hover {
-          color: $linkColor;
+          color: darken($darkColor, 35%);
         }
       }
     }
