@@ -10,7 +10,7 @@ FORMS
 .site__search {
   input {
     background: white;
-    border: 1px solid $borderColor;
+    // border: 1px solid $borderColor;
     border-radius: 3px;
     padding: $spacing-l $spacing-xl;
     @include transition(.2s ease-in-out);
