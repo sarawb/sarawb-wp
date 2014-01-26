@@ -21,10 +21,11 @@ COLORS
 Color Variables
 ------------------------------------------- */
 
-$darkColor: #ca6f1b;
+// $darkColor: #ca6f1b;
+$darkColor: #9fbec2;
 $headingColor: #444;
 $bodyColor: #666;
-$linkColor: #275ea0;
+$linkColor: darken($darkColor, 10%);
 $borderColor: #eee;
 // $jazzColor: ;
 // $alertColor: ;
