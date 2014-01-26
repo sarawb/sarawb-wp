@@ -1,3 +1,23 @@
+/*
+MAIN CONTENT
+-------------------------------------------- */
+
+// Front Page
+
+.site__headline {
+  margin: 0 0 $spacing-xxs;
+  h1 {
+    font-size: 180%;
+    line-height: 145%;
+    font-weight: 800;
+  }
+}
+
+
+.site__content {
+  background: white;
+  padding: $spacing-xl 0;
+}
 
 .post__meta {
   margin: 0 0 2em;
@@ -21,4 +41,51 @@
   p {
     font-size: 95%;
   }
+}
+
+
+// Comment Styles
+
+#comments {
+  margin: $spacing-xl 0 0;
+  a {
+    text-decoration: none !important;
+  }
+}
+
+.comment {
+  border-bottom: 1px solid $borderColor;
+  padding: $spacing-xl 0;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.comment-author {
+  @extend %secondarytype;
+  font-size: 100%;
+  a, cite {
+  font-weight: 700;
+  }
+  img {
+    float: left;
+    margin: 0 $spacing-s 0 0;
+  }
+}
+
+.comment-meta {
+  margin: 0 0 $spacing-m;
+  @extend %secondarytype;
+  a {
+    color: lighten($bodyColor, 30%);
+    font-size: 90%;
+  }
+}
+
+.says {
+  display: none;
+}
+
+.comment-reply-link {
+  font-size: 85%;
 }
