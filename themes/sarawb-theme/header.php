@@ -45,7 +45,7 @@
 <header class="site__header" role="banner">
   <div class="contain">
     <div class="site__branding left">
-      <a href="/"><img src="<?php bloginfo('template_url'); ?>/assets/img/SWB_Logo.svg" alt="Sara Wachter-Boettcher" width="90"></a>
+      <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/SWB_Logo.svg" alt="Sara Wachter-Boettcher" width="90"></a>
     </div>
 
     <div class="nav_and_search grid5 right">
