@@ -132,6 +132,14 @@ ul {
 		margin: 0 0 $spacing-xxs;
 	}
 }
+
+ol {
+	margin: 0 0 $spacing-l $spacing-xl;
+	list-style-type: decimal;
+	li {
+		margin: 0 0 $spacing-xxs;
+	}
+}
 /*
 
 INLINE TYPE
@@ -157,6 +165,14 @@ blockquote {
 	p {
 		color: lighten($bodyColor, 15%);
 		font-style: italic;
+	}
+	&.pullquote {
+		border-top: 5px solid $darkColor;
+		border-left: none;
+		float: right;
+		padding: $spacing-m 0 0;
+		margin: 0 -7em $spacing-xl $spacing-l;
+		width: percentage(500/940);
 	}
 }
 

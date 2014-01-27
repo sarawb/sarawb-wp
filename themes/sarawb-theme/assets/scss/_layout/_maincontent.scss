@@ -57,6 +57,10 @@ MAIN CONTENT
 
 #comments {
   margin: $spacing-xl 0 0;
+  ol {
+    list-style-type: none;
+    margin: 0;
+  }
   a {
     text-decoration: none !important;
   }
