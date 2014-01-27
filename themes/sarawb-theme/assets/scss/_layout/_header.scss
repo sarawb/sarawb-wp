@@ -38,7 +38,10 @@ HEADER
     li {
       // float: left;
       display: inline;
-      margin-right: percentage(90/940);
+      margin-right: 1em;
+      &:last-child {
+        margin-right: 0;
+      }
       a {
         color: darken($darkColor, 20%);
         font-weight: 700;
