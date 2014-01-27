@@ -2,6 +2,47 @@
 /*
 
 PAGE NAVIGATION
--------------------------------------------
+------------------------------------------- */
 
-*/
+.page__navigation{
+  margin: $spacing-l 0 0;
+}
+
+.wp-pagenavi {
+  overflow: hidden;
+  text-align: center;
+  @extend %clearfix;
+  @extend %secondarytype;
+}
+
+.wp-pagenavi a {
+  background: $darkColor;
+  border: none !important;
+  display: inline-block;
+  padding: 6px 15px;
+  margin: 0 5px;
+  font-size: .75em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none !important;
+  @include border-radius (4px);
+  &:hover {
+    background: darken($darkColor, 10%);
+    color: white;
+  }
+  &:active {
+    box-shadow: inset 2px 2px 0 rgba(black, .2);
+  }
+}
+
+.current {
+  background: $borderColor;
+  color: $bodyColor;
+  padding: 6px 15px;
+  margin: 0 5px;
+  font-size: .75em;
+  @include border-radius (4px);
+  border: none !important;
+  display: inline-block;
+  font-weight: bold;
+}
