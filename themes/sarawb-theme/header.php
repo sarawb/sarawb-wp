@@ -54,8 +54,8 @@
       </div>
       <nav class="site__nav right" role="navigation">
         <ul>
-          <li><a href="/about">About</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="<?php bloginfo('url'); ?>/about">About</a></li>
+          <li><a href="<?php bloginfo('url'); ?>/blog">Blog</a></li>
         </ul>
       </nav>
     </div><!-- .nav_and_search -->
