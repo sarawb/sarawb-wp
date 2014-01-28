@@ -6,7 +6,8 @@ OBJECTS
 */
 
 body {
-  background: $borderColor;
+  // background: $borderColor;
+  background: lighten($jazzColor, 5%);
 }
 
 .contain {

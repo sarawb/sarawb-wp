@@ -85,6 +85,9 @@ h6 {
 	a {
 		text-decoration: none !important;
 	}
+	.site__footer & {
+		color: darken($jazzColor, 65%);
+	}
 }
 
 h1 {

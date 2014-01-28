@@ -26,19 +26,4 @@
     </div>
   </section>
 
-  <!-- <div class="content__section">
-    <div class="grid4 columns">
-      <h3>Workshops</h3>
-      <p>I mix educational sessions with hands-on activities that get teams thinking and working differently. Half-day, full-day, or longer sessions available.</p>
-    </div>
-    <div class="grid4 columns">
-      <h3>Consulting</h3>
-      <p>I’ll work with you to facilitate the strategic process, define and plan projects, and identify the right people to augment your team.</p>
-    </div>
-    <div class="grid4 columns">
-      <h3>Project partnerships</h3>
-      <p>I partner with agencies or internal teams to develop messaging and editorial strategy for websites, apps, and digital products.</p>
-    </div>
-  </div> -->
-
 <?php get_footer(); ?>

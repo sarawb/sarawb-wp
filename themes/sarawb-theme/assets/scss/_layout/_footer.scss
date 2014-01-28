@@ -4,6 +4,7 @@ FOOTER
 
 .site__footer {
   // background: $borderColor;
+  color: darken($jazzColor, 60%);
   padding: $spacing-m 0;
   font-size: 85%;
   h4:first-child {
