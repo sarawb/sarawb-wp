@@ -8,6 +8,9 @@
       <p>Tell me about your project, your conference, or just what's keeping you up at night.</p>
     </div>
     <div class="grid4 columns">
+      <?php gravity_form('Contact Form', false, false, false, '', true); ?>
+    </div>
+    <div class="grid4 columns">
       <p>Brought to you from beautiful South Philadelphia.</p>
       <p>541.517.2870</p>
       <ul class="inline-list social-icons">

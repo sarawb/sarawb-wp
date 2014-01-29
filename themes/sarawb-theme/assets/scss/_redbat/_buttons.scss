@@ -1,6 +1,16 @@
 /*
 
 BUTTONS
----------------------------------------------------------
+--------------------------------------------------------- */
 
-*/
+.button {
+  background: $linkColor;
+  @include border-radius(2px);
+  padding: 8px 15px;
+  color: white;
+  font-weight: bold;
+  @include transition(background .2s ease-in-out);
+  &:hover {
+    background: darken($linkColor, 5%);
+  }
+}
