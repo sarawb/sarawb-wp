@@ -99,8 +99,10 @@ FORMS
 
 .gfield_label {
   display: block;
+  font-size: .95em;
   font-weight: bold;
   margin: 0 0 02.34375%;
+  @extend %secondarytype;
 }
 
 .ginput_left {
