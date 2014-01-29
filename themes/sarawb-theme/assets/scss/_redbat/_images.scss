@@ -13,9 +13,13 @@ img {
 figure {
   margin: 0;
   &.alignleft {
-    margin: 0 $spacing-l $spacing-xl -7em;
+    margin: 0 $spacing-l 0 -7em;
     float: left;
     width: percentage(500/940);
+    .home & {
+      margin: 0 $spacing-xl $spacing-m 0;
+      width: percentage(200/940);
+    }
   }
   &.fullsize {
     margin: 0 0 $spacing-xl;
