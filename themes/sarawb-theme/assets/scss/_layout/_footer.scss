@@ -11,3 +11,13 @@ FOOTER
     margin-top: 0;
   }
 }
+
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  a {
+    text-decoration: none !important;
+    text-align: center;
+    font-size: 1.1em;
+  }
+}

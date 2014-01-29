@@ -136,6 +136,13 @@ ul {
 	}
 }
 
+.inline-list {
+	li {
+		display: inline;
+		margin-right: $spacing-l;
+	}
+}
+
 ol {
 	margin: 0 0 $spacing-l $spacing-xl;
 	list-style-type: decimal;
@@ -213,9 +220,14 @@ a {
 ICON FONT
 ------------------------------------------- */
 
+@include embed-font("swb_icon_font", "../fonts/swb_icon_font/swb_icon_font");
+%icon-font {
+	font-family: "swb_icon_font";
+}
+
 [data-icon]:before {
   content: attr(data-icon);
-  // @include iconfont;
+  @extend %icon-font;
   speak: none;
   vertical-align: top;
 }
