@@ -18,11 +18,10 @@
             <hr>
           </article>
 
-          <div class="page__navigation">
-            <?php wp_pagenavi(); ?>
-          </div>
-
       <?php endwhile; endif; ?>
+      <div class="page__navigation">
+        <?php wp_pagenavi(); ?>
+      </div>
     </div>
 
 <?php get_footer(); ?>

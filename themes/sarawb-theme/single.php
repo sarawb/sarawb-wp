@@ -45,4 +45,4 @@
       </section>
     </div><!-- grid8 centered -->
 
-<?php get_footer(); ?>
+<?php get_footer('blog'); ?>
