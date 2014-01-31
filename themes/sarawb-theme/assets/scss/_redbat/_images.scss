@@ -18,7 +18,15 @@ figure {
     width: percentage(500/940);
     .home & {
       margin: 0 $spacing-xl $spacing-m 0;
-      width: percentage(200/940);
+      width: percentage(240/940);
+    }
+  }
+  &.alignright {
+    margin: 0 -7em 0 $spacing-l;
+    float: right;
+    width: percentage(500/940);
+    .home & {
+      width: percentage(650/940);
     }
   }
   &.fullsize {
