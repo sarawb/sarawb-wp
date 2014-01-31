@@ -4,8 +4,8 @@
 <footer class="site__footer" role="contentinfo">
   <div class="contain">
     <div class="grid4 columns">
-      <h4>Let’s Talk</h4>
-      <p>Tell me about your project, your conference, or just what's keeping you up at night.</p>
+      <h4>About Me</h4>
+      <p>I’m a content strategy consultant, writer, and editor currently living in lovely Philadelphia. <a href="<?php bloginfo('url'); ?>/about">Read more&hellip;</a></p>
     </div>
     <div class="grid4 columns">
       <p>Brought to you from beautiful South Philadelphia.</p>
