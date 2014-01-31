@@ -13,13 +13,9 @@ img {
 figure {
   margin: 0;
   &.alignleft {
-    margin: 0 $spacing-l 0 -7em;
+    margin: 0 $spacing-l $spacing-m -7em;
     float: left;
-    width: percentage(500/940);
-    .home & {
-      margin: 0 $spacing-xl $spacing-m 0;
-      width: percentage(240/940);
-    }
+    width: percentage(600/940);
   }
   &.alignright {
     margin: 0 -7em 0 $spacing-l;
@@ -33,9 +29,9 @@ figure {
     margin: 0 0 $spacing-xl;
   }
   figcaption {
-    color: lighten($bodyColor, 20%);
-    font-size: 85%;
-    line-height: 170%;
+    color: lighten($bodyColor, 30%);
+    font-size: 80%;
+    line-height: 175%;
     @extend %secondarytype;
   }
 }
