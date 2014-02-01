@@ -94,7 +94,18 @@ FORMS
 }
 
 .gfield {
-  margin: 0 0 $spacing-xl;
+  float: left;
+  margin: 0 percentage(20/940) $spacing-m 0;
+  width: 48.9361702%;
+  &:nth-child(2n+2) {
+    margin-right: 0;
+  }
+}
+
+#field_1_5 {
+  float: none;
+  width: 100%;
+  @extend %clearfix;
 }
 
 .gfield_label {

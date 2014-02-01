@@ -9,11 +9,9 @@
       <p>I’m a content strategy consultant, writer, and editor currently living in lovely Philadelphia. <a href="<?php bloginfo('url'); ?>/about">Read more&hellip;</a></p>
     </div>
   <?php else : ?>
-    <div class="grid4 columns">
+    <div class="grid8 columns">
       <h4>Let’s talk</h4>
       <p>Tell me about your project, your conference, or just what's keeping you up at night.</p>
-    </div>
-    <div class="grid4 columns">
       <?php gravity_form('Contact Form', false, false, false, '', true); ?>
     </div>
   <?php endif; ?>
