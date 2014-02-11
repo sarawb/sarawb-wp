@@ -23,7 +23,7 @@ body {
 }
 
 .panel {
-  background: lighten($jazzColor, 3%);
+  background: lighten($linkColor, 56%);
   border-radius: 3px;
   padding: $spacing-m;
   .content__section:only-child {

@@ -5,12 +5,12 @@
   <div class="contain">
   <?php if(is_single()) : ?>
     <div class="grid4 columns">
-      <h4>About Me</h4>
-      <p>I’m a content strategy consultant, writer, and editor currently living in lovely Philadelphia. <a href="<?php bloginfo('url'); ?>/about">Read more&hellip;</a></p>
+      <h3>About Me</h3>
+      <p>I’m a content strategy consultant, writer, and editor currently living in lovely Philadelphia. <a href="<?php bloginfo('url'); ?>/about">More about me</a></p>
     </div>
   <?php else : ?>
     <div class="grid8 columns">
-      <h4>Let’s talk</h4>
+      <h3>Let’s talk</h3>
       <p>Tell me about your project, your conference, or just what's keeping you up at night.</p>
       <?php gravity_form('Contact Form', false, false, false, '', true); ?>
     </div>

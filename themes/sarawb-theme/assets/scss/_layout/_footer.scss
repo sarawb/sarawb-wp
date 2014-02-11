@@ -6,9 +6,13 @@ FOOTER
   // background: $borderColor;
   color: darken($jazzColor, 60%);
   padding: $spacing-m 0;
-  font-size: 85%;
-  h4:first-child {
+  font-size: 75%;
+  @extend %secondarytype;
+  h3:first-child {
     margin-top: 0;
+  }
+  p {
+    line-height: 160%;
   }
 }
 
@@ -18,6 +22,6 @@ FOOTER
   a {
     text-decoration: none !important;
     text-align: center;
-    font-size: 1.15em;
+    font-size: 1.2em;
   }
 }

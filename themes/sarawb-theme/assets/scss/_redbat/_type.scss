@@ -159,7 +159,7 @@ strong {
 	font-weight: bold;
 }
 
-em {
+em, cite {
 	font-style: italic;
 }
 
@@ -176,6 +176,12 @@ blockquote {
 		color: lighten($bodyColor, 15%);
 		font-style: italic;
 	}
+	small {
+		display: block;
+		font-size: 90%;
+		font-style: normal;
+		margin-top: $spacing-s;
+	}
 	&.pullquote {
 		border-top: 5px solid $darkColor;
 		border-left: none;
@@ -184,6 +190,14 @@ blockquote {
 		padding: $spacing-m 0 0;
 		margin: 0 -7em $spacing-xl $spacing-l;
 		width: percentage(500/940);
+		.home & {
+			border-top: none;
+			font-size: 95%;
+			font-style: italic;
+			margin: 0;
+			padding: 0;
+			width: auto;
+		}
 	}
 }
 
