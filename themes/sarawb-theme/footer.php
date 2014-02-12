@@ -4,7 +4,7 @@
 <footer class="site__footer" role="contentinfo">
   <div class="contain">
   <?php if(is_single()) : ?>
-    <div class="grid4 columns">
+    <div class="grid8 columns">
       <h3>About Me</h3>
       <p>I’m a content strategy consultant, writer, and editor currently living in lovely Philadelphia. <a href="<?php bloginfo('url'); ?>/about">More about me</a></p>
     </div>
