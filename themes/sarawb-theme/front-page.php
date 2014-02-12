@@ -21,7 +21,7 @@
   <section class="content__section services">
     <div class="grid4 columns">
       <h3>Workshops</h3>
-      <p>I mix educational sessions with hands-on activities that get teams thinking and working differently. Half-day, full-day, or longer sessions available.</p>
+      <p>I mix presentations with hands-on activities that get teams thinking and working differently. Half-day, full-day, or longer sessions available.</p>
     </div>
     <div class="grid4 columns">
       <h3>Consulting</h3>
