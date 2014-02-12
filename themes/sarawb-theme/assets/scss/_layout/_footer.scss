@@ -6,9 +6,9 @@ FOOTER
   // background: $borderColor;
   color: darken($jazzColor, 60%);
   padding: $spacing-m 0;
-  font-size: 75%;
+  font-size: 90%;
   @extend %secondarytype;
-  h3:first-child {
+  h2:first-child {
     margin-top: 0;
   }
   p {
