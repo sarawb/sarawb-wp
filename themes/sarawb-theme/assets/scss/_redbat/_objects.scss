@@ -29,6 +29,9 @@ body {
   .content__section:only-child {
     margin-bottom: 0;
   }
+  h3, p {
+    // color: darken($linkColor, 13%);
+  }
 }
 
 /* Grid

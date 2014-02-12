@@ -33,7 +33,7 @@
     </div>
   </section>
 
-  <section class="content__section">
+  <section class="content__section the-book">
     <div class="grid12 centered panel">
 
       <section class="content__section">
@@ -44,14 +44,15 @@
         </div>
 
         <div class="grid5 columns">
-          <h3 class="no-margin">The Book: Content Everywhere</h3>
+          <h3>The Book: Content Everywhere</h3>
           <p>From smartphones to read-later services to whatever’s next: your content needs to go more places, more easily. I wrote a book to show you how.</p>
           <a class="button" href="URL">Buy it now</a>
         </div>
 
         <div class="grid4 columns">
           <blockquote class="pullquote">
-            The book you’re holding is magic. It cuts through all the noise surrounding structured content and offers immediately useful ways to turn your content from a bunch of scattered pages into a strong, flexible mesh. <small>—Erin Kissane, author, <cite>The Elements of Content Strategy</cite></small>
+            <p>It cuts through all the noise surrounding structured content and offers immediately useful ways to turn your content from a bunch of scattered pages into a strong, flexible mesh.</p>
+            <small>—Erin Kissane, author, <cite>The Elements of Content Strategy</cite></small>
           </blockquote>
         </div>
 

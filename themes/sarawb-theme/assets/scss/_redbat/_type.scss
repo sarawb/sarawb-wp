@@ -192,11 +192,36 @@ blockquote {
 		width: percentage(500/940);
 		.home & {
 			border-top: none;
-			font-size: 95%;
-			font-style: italic;
 			margin: 0;
 			padding: 0;
 			width: auto;
+		}
+	}
+}
+
+.the-book {
+	h3 {
+		margin-top: 0;
+	}
+	.pullquote {
+		position: relative;
+		font-size: 92%;
+		line-height: 170%;
+		p {
+			color: $bodyColor;
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+			color: lighten($linkColor, 52%);
+			content: "“";
+			font-size: 10em;
+			font-style: italic;
+			position: absolute;
+			top: 45px;
+			left: -40px;
+			z-index: 1;
+
 		}
 	}
 }
