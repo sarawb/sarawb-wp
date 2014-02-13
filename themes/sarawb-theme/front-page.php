@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-  <section class="content__section">
+  <section class="content__section no-margin">
     <header class="site__headline">
       <h1>No buzzwords, no bandwagons: I’m a content strategy consultant who’ll help you make real change.</h1>
     </header>
