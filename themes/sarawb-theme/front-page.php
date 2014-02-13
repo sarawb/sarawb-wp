@@ -13,7 +13,7 @@
     </div>
     <div class="grid5 columns">
       <figure class="fullsize">
-        <img src="<?php bloginfo('template_url'); ?>/assets/img/swb_photo.jpg" alt="Sara Wachter-Boettcher">
+        <img src="<?php bloginfo('template_url'); ?>/assets/img/swb_homepage_photo.jpg" alt="Sara Wachter-Boettcher">
       </figure>
     </div>
   </section>
