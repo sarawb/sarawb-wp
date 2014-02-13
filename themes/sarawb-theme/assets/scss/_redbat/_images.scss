@@ -12,6 +12,9 @@ img {
 
 figure {
   margin: 0;
+  img {
+    display: block;
+  }
   &.alignleft {
     margin: 0 $spacing-l $spacing-m -7em;
     float: left;
