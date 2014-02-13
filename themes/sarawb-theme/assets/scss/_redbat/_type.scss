@@ -179,8 +179,9 @@ blockquote {
 	small {
 		display: block;
 		font-size: 90%;
+		line-height: 140%;
 		font-style: normal;
-		margin-top: $spacing-s;
+		margin-top: $spacing-m;
 	}
 	&.pullquote {
 		border-top: 5px solid $darkColor;
