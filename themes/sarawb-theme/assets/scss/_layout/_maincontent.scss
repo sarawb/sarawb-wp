@@ -26,10 +26,14 @@ MAIN CONTENT
   }
 }
 
+.secondary__projects {
+  margin-bottom: 0;
+}
+
 
 .site__content {
   background: white;
-  padding: $spacing-xl 0;
+  padding: $spacing-xl 0 $spacing-m;
 }
 
 .post__meta {
