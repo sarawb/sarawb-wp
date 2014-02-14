@@ -42,13 +42,13 @@
         <div class="grid5 columns">
           <h3>The Book: Content Everywhere</h3>
           <p>From smartphones to read-later services to whatever’s next: your content needs to go more places, more easily. I wrote a book to show you how.</p>
-          <a class="button" href="URL">Buy it now</a>
+          <a class="button" href="http://rosenfeldmedia.com/books/content-everywhere">Buy it now</a>
         </div>
 
         <div class="grid4 columns">
           <blockquote class="pullquote">
             <p>It cuts through all the noise surrounding structured content and offers immediately useful ways to turn your content from a bunch of scattered pages into a strong, flexible mesh.</p>
-            <small>—Erin Kissane, author, <cite>The Elements of Content Strategy</cite></small>
+            <small>—<a href="http://incisive.nu/">Erin Kissane</a>, author, <cite>The Elements of Content Strategy</cite></small>
           </blockquote>
         </div>
 
@@ -66,7 +66,7 @@
 
       <div class="grid10 columns">
         <h4 class="no-margin">Speaking</h4>
-        <p>I’ve shared my ideas at conferences like Confab, Web Directions, Mobilism, Content Strategy Forum, Breaking Development, and UX Week. See <a href="URL">where I’m speaking next</a>.</p>
+        <p>I’ve shared my ideas at conferences like Confab, Web Directions, Mobilism, Content Strategy Forum, Breaking Development, and UX Week. See <a href="http://lanyrd.com/profile/sara_ann_marie">where I’m speaking next</a>.</p>
       </div>
     </div>
 
@@ -79,7 +79,7 @@
 
       <div class="grid10 columns">
         <h4 class="no-margin">A List Apart</h4>
-        <p>The web wouldn’t be the same without <cite>A List Apart</cite>, a magazine about content, culture, and code since 1998. I’ve been the editor in chief since 2012. <a href="URL">Write for us</a>.</p>
+        <p>The web wouldn’t be the same without <cite>A List Apart</cite>, a magazine about content, culture, and code since 1998. I’ve been the editor in chief since 2012. <a href="http://alistapart.com/about/contribute">Write for us</a>.</p>
       </div>
     </div>
   </section>
