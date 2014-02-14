@@ -3,18 +3,6 @@
 
 <footer class="site__footer" role="contentinfo">
   <div class="contain">
-  <?php if(is_single()) : ?>
-    <div class="grid8 columns">
-      <h2>About Me</h2>
-      <p>I’m a content strategy consultant, writer, and editor currently living in lovely Philadelphia. <a href="<?php bloginfo('url'); ?>/about">More about me</a></p>
-    </div>
-  <?php else : ?>
-    <div class="grid8 columns">
-      <h2>Let’s talk</h2>
-      <p>Tell me about your project, your conference, or just what's keeping you up at night.</p>
-      <?php gravity_form('Contact Form', false, false, false, '', true); ?>
-    </div>
-  <?php endif; ?>
     <div class="grid4 columns">
       <p>Brought to you from beautiful South Philadelphia.</p>
       <p>541.517.2870</p>
@@ -37,6 +25,18 @@
         </a></li>
       </ul>
     </div>
+  <?php if(is_single()) : ?>
+    <div class="grid8 columns">
+      <h2>About Me</h2>
+      <p>I’m a content strategy consultant, writer, and editor currently living in lovely Philadelphia. <a href="<?php bloginfo('url'); ?>/about">More about me</a></p>
+    </div>
+  <?php else : ?>
+    <div class="grid8 columns">
+      <h2>Let’s talk</h2>
+      <p>Tell me about your project, your conference, or just what's keeping you up at night.</p>
+      <?php gravity_form('Contact Form', false, false, false, '', true); ?>
+    </div>
+  <?php endif; ?>
   </div>
 </footer>
 
