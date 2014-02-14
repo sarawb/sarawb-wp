@@ -12,59 +12,6 @@ function my_jquery_enqueue() {
 wp_register_script( 'global-stuff', get_template_directory_uri() . '/assets/js/stuff-ck.js');
 wp_enqueue_script( 'global-stuff', 'true', 'true', 'true', 'true' );
 
-// Register Custom Post Type
-// add_action( 'init', 'create_post_type');
-// function create_post_type() {
-//   register_post_type( 'episodes',
-//     array(
-//       'labels' => array(
-//         'name' => 'Episodes',
-//         'singular_name' => 'Episode',
-//         'menu_name' => 'Episodes',
-//         'add_new' => 'Add Episode',
-//         'add_new_item' => 'Add New Episode',
-//         'edit' => 'Edit',
-//         'edit_item' => 'Edit Episode',
-//         'new_item' => 'New Episode',
-//         'view' => 'View Episode',
-//         'view_item' => 'View Episode',
-//         'search_items' => 'Search Episodes',
-//         'not_found' => 'No Episodes Found',
-//         'not_found_in_trash' => 'No Episodes Found in Trash',
-//         'parent' => 'Parent Episode',
-//       ),
-//     'public' => true,
-//     'show_ui' => true,
-//     'show_in_menu' => true,
-//     'show_in_nav_menus' => true,
-//     'show_in_admin_bar' => true,
-//     'menu_position' => 5,
-//     'capability_type' => 'post',
-//     'hierarchical' => false,
-//     'rewrite' => array('slug' => 'ep', 'with_front' => '' ),
-//     'query_var' => true,
-//     'exclude_from_search' => false,
-//     'has_archive' => true,
-//     'supports' => array( 'title','editor','excerpt','custom-fields','thumbnail', 'revisions' ),
-//     'taxonomies' => array( 'category' ),
-//     )
-//   );
-// }
-
-// Messing with WP Admin Bar
-function mytheme_admin_bar_render() {
-    global $wp_admin_bar;
-    // we can remove a menu item, like the Comments link, just by knowing the right $id
-    $wp_admin_bar->remove_menu('comments');
-    $wp_admin_bar->remove_menu('wpseo-menu');
-    // or we can remove a submenu, like New Link.
-    $wp_admin_bar->remove_menu('new-link', 'new-content');
-    $wp_admin_bar->remove_menu('new-media', 'new-content');
-    $wp_admin_bar->remove_menu('new-user', 'new-content');
-}
-// and we hook our function via
-add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
-
 // Modifying Excerpt
 function new_excerpt_more( $more ) {
   return '…';
@@ -76,6 +23,7 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+// Dynamic Sidebars
 register_sidebar( array(
     'name' => 'Email Subscription',
     'id' => 'email-subscription',
@@ -93,3 +41,98 @@ register_sidebar( array(
     'before_title' => '<h2>',
     'after_title' => '</h2>'
 ) );
+
+// Advanced Custom Fields
+
+// Options Page
+include_once( 'add-ons/acf-options-page/acf-options-page.php' );
+
+// Registering Homepage Options Page
+register_options_page('Homepage Options');
+
+// Fields for the Homepage Options Page
+
+if(function_exists("register_field_group"))
+{
+  register_field_group(array (
+    'id' => 'acf_homepage',
+    'title' => 'Homepage',
+    'fields' => array (
+      array (
+        'key' => 'field_52fe4e4e18d89',
+        'label' => 'Main Headline',
+        'name' => 'home_headline',
+        'type' => 'text',
+        'default_value' => '',
+        'placeholder' => '',
+        'prepend' => '',
+        'append' => '',
+        'formatting' => 'none',
+        'maxlength' => '',
+      ),
+      array (
+        'key' => 'field_52fe4ec218d8a',
+        'label' => 'Homepage Content',
+        'name' => 'home_content',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'basic',
+        'media_upload' => 'no',
+      ),
+      array (
+        'key' => 'field_52fe4eeb18d8b',
+        'label' => 'Homepage Image',
+        'name' => 'home_image',
+        'type' => 'image',
+        'save_format' => 'url',
+        'preview_size' => 'medium',
+        'library' => 'all',
+      ),
+      array (
+        'key' => 'field_52fe5a6e4da22',
+        'label' => 'Workshops Content',
+        'name' => 'home_workshops_content',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'basic',
+        'media_upload' => 'no',
+      ),
+      array (
+        'key' => 'field_52fe5add4da23',
+        'label' => 'Consulting Content',
+        'name' => 'home_consulting_content',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'basic',
+        'media_upload' => 'no',
+      ),
+      array (
+        'key' => 'field_52fe5b074da24',
+        'label' => 'Project Partnerships Content',
+        'name' => 'home_project_partnerships_content',
+        'type' => 'wysiwyg',
+        'default_value' => '',
+        'toolbar' => 'basic',
+        'media_upload' => 'no',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'options_page',
+          'operator' => '==',
+          'value' => 'acf-options-homepage-options',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+}
