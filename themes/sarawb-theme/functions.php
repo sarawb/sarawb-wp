@@ -84,3 +84,12 @@ register_sidebar( array(
     'before_title' => '<h5>',
     'after_title' => '</h5>'
 ) );
+
+register_sidebar( array(
+    'name' => 'Footer About Me',
+    'id' => 'footer-about-me',
+    'before_widget' => '<div class="footer__about-me">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>'
+) );

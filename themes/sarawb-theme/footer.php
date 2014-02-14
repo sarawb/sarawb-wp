@@ -27,8 +27,8 @@
     </div>
   <?php if(is_single()) : ?>
     <div class="grid8 columns">
-      <h2>About Me</h2>
-      <p>I’m a content strategy consultant, writer, and editor currently living in lovely Philadelphia. <a href="<?php bloginfo('url'); ?>/about">More about me</a></p>
+     <?php dynamic_sidebar( 'footer-about-me' ); ?>
+     <p><a href="<?php bloginfo('url'); ?>/about/">More about me</a></p>
     </div>
   <?php else : ?>
     <div class="grid8 columns">
