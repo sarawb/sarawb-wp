@@ -28,7 +28,6 @@
   <?php if(is_single()) : ?>
     <div class="grid8 columns">
      <?php dynamic_sidebar( 'footer-about-me' ); ?>
-     <p><a href="<?php bloginfo('url'); ?>/about/">More about me</a></p>
     </div>
   <?php else : ?>
     <div class="grid8 columns">
