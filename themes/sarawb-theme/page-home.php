@@ -66,7 +66,7 @@
 
       <div class="grid10 columns">
         <h4 class="no-margin">Speaking</h4>
-        <p>I’ve shared my ideas at conferences like Confab, Web Directions, Mobilism, Content Strategy Forum, Breaking Development, and UX Week. See <a href="http://lanyrd.com/profile/sara_ann_marie">where I’m speaking next</a>.</p>
+        <p>I’ve shared my ideas at conferences like Confab, Web Directions, Mobilism, Content Strategy Forum, Beyond the Desktop, and UX Week. See <a href="http://lanyrd.com/profile/sara_ann_marie">where I’m speaking next</a>.</p>
       </div>
     </div>
 
