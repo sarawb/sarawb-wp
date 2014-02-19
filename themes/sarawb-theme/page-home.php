@@ -79,7 +79,7 @@
 
       <div class="grid10 columns">
         <h4 class="no-margin">A List Apart</h4>
-        <p>The web wouldn’t be the same without <cite>A List Apart</cite>, a magazine about content, culture, and code since 1998. I’ve been the editor in chief since 2012. <a href="http://alistapart.com/about/contribute">Write for us</a>.</p>
+        <p>The web wouldn’t be the same without <cite>A List Apart</cite>, a magazine about content, culture, and code. I’ve been the editor in chief since 2012. <a href="http://alistapart.com/about/contribute">Write for us</a>.</p>
       </div>
     </div>
   </section>
