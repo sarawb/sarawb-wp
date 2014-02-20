@@ -16,20 +16,35 @@ figure {
     display: block;
   }
   &.alignleft {
-    margin: 0 $spacing-l $spacing-m -7em;
+    margin: 0 $spacing-l $spacing-m 0;
     float: left;
-    width: percentage(600/940);
+    width: percentage(450/940);
+    &.offset {
+      margin: 0 $spacing-l $spacing-m -7em;
+      width: percentage(600/940);
+    }
   }
   &.alignright {
-    margin: 0 -7em 0 $spacing-l;
+    margin: 0 0 $spacing-m $spacing-l;
     float: right;
-    width: percentage(500/940);
+    width: percentage(400/940);
+    &.offset {
+      margin: 0 -7em 0 $spacing-l;
+      width: percentage(600/940);
+    }
     .home & {
       width: percentage(650/940);
     }
   }
   &.fullsize {
     margin: 0 0 $spacing-xl;
+  }
+  &.aligncenter {
+    margin: 0 0 $spacing-m;
+    text-align: center;
+    img {
+      margin: 0 auto;
+    }
   }
   figcaption {
     color: lighten($bodyColor, 30%);
