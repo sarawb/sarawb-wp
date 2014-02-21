@@ -43,6 +43,8 @@
 <?php wp_footer(); ?>
 <!--End WP Generated Footer -->
 
+<script src="<?php bloginfo('template_url'); ?>/assets/js/stuff-ck.js"></script>
+
 </body>
 
 </html>
