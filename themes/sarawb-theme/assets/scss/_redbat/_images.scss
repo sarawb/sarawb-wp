@@ -25,7 +25,7 @@ figure {
     &.offset {
       margin: 0 $spacing-l $spacing-m -7em;
       width: percentage(600/940);
-      @include breakpoint(m) {
+      @include breakpoint(xxl) {
         margin: 0 $spacing-l $spacing-m 0
       }
       @include breakpoint(s) {
@@ -43,7 +43,7 @@ figure {
     &.offset {
       margin: 0 -7em $spacing-m $spacing-l;
       width: percentage(600/940);
-      @include breakpoint(m) {
+      @include breakpoint(xxl) {
         margin: 0 0 $spacing-m $spacing-l;
       }
       @include breakpoint(s) {
