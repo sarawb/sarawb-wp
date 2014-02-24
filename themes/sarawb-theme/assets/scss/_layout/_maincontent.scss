@@ -130,8 +130,8 @@ MAIN CONTENT
 .comment-meta {
   margin: 0 0 $spacing-m;
   @extend %secondarytype;
-  @include breakpoint(m) {
-    margin: 0 0 $spacing-l;
+  @include breakpoint(s) {
+    margin: 0 0 $spacing-xl;
   }
   a {
     color: lighten($bodyColor, 30%);
