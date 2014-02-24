@@ -12,8 +12,11 @@ FORMS
     background: white;
     // border: 1px solid $borderColor;
     border-radius: 3px;
-    padding: $spacing-l $spacing-xl;
+    padding: 10px 20px;
     @include transition(.2s ease-in-out);
+    @include breakpoint(m) {
+      padding: 10px;
+    }
     &:focus {
       // box-shadow: inset 1px 1px 2px rgba(black, .1), 0 0 3px $darkColor;
       border-color: darken($borderColor, 10%);

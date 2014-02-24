@@ -14,6 +14,18 @@ FOOTER
   p {
     line-height: 160%;
   }
+  @include breakpoint(m) {
+    p {
+      margin: 0 0 .5em;
+    }
+    .grid4 {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+    .grid8 {
+      width: 100%;
+    }
+  }
 }
 
 .social-icons {

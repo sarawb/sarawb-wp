@@ -19,18 +19,36 @@ figure {
     margin: 0 $spacing-l $spacing-m 0;
     float: left;
     width: percentage(450/940);
+    @include breakpoint(s) {
+      width: 100%;
+    }
     &.offset {
       margin: 0 $spacing-l $spacing-m -7em;
       width: percentage(600/940);
+      @include breakpoint(m) {
+        margin: 0 $spacing-l $spacing-m 0
+      }
+      @include breakpoint(s) {
+        width: 100%;
+      }
     }
   }
   &.alignright {
     margin: 0 0 $spacing-m $spacing-l;
     float: right;
     width: percentage(400/940);
+    @include breakpoint(s) {
+      width: 100%;
+    }
     &.offset {
-      margin: 0 -7em 0 $spacing-l;
+      margin: 0 -7em $spacing-m $spacing-l;
       width: percentage(600/940);
+      @include breakpoint(m) {
+        margin: 0 0 $spacing-m $spacing-l;
+      }
+      @include breakpoint(s) {
+        width: 100%;
+      }
     }
     .home & {
       width: percentage(650/940);

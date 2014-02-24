@@ -10,6 +10,9 @@ HEADER
   font-size: 85%;
   padding: $spacing-xs 0;
   @extend %secondarytype;
+  @include breakpoint(m) {
+    padding: 20px 0;
+  }
   // .contain {
   //   border-bottom: 5px solid $darkColor;
   //   padding-bottom: $spacing-l;
@@ -19,9 +22,17 @@ HEADER
 .site__branding {
   @extend .grid2;
   @extend .left;
+  text-align: center;
+  a {
+    display: inline-block;
+  }
   img {
     float: left;
     margin-right: $spacing-xl;
+    @include breakpoint(m) {
+      margin: 0;
+      float: none;
+    }
   }
   h1 {
     color: white;
@@ -30,11 +41,22 @@ HEADER
   }
 }
 
+.nav_and_search {
+  width: 70%;
+  margin: 0 auto;
+  float: none;
+}
+
 .site__nav {
   margin: percentage(82/940) percentage(60/940) 0 0;
+  @include breakpoint(m) {
+    // float: none;
+    // margin: 1em 0 0;
+  }
   ul {
     @extend %clearfix;
     white-space: nowrap;
+    margin: 0;
     li {
       // float: left;
       display: inline;
@@ -56,4 +78,8 @@ HEADER
 
 .site__search {
   margin: percentage(70/940) 0 0;
+  @include breakpoint(m) {
+    // float: none;
+    // margin: 1.8em 0 0;
+  }
 }
