@@ -49,7 +49,7 @@
       <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/SWB_Logo.svg" alt="Sara Wachter-Boettcher" width="90"></a>
     </div>
 
-    <div class="nav_and_search grid5 right">
+    <div class="nav_and_search right">
       <div class="site__search right">
         <?php get_search_form(); ?>
       </div>
