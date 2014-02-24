@@ -50,6 +50,7 @@ figure {
     color: lighten($bodyColor, 30%);
     font-size: 80%;
     line-height: 175%;
+    margin: .4em 0 0;
     @extend %secondarytype;
   }
 }

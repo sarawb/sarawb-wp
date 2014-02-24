@@ -164,6 +164,15 @@ em, cite {
 	font-style: italic;
 }
 
+:not(pre) > code {
+	background: #f5f2f0;
+	border-radius: 3px;
+	color: $linkColor;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	font-size: 75%;
+	padding: 1px 3px;
+}
+
 
 /*
 
