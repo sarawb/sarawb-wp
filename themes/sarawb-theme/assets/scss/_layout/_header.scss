@@ -46,7 +46,7 @@ HEADER
   margin: 0 auto;
   float: none;
   @include breakpoint(s) {
-    width: 83%;
+    width: 90%;
   }
 }
 
@@ -57,7 +57,7 @@ HEADER
     // margin: 1em 0 0;
   }
   @include breakpoint(xs) {
-    margin: percentage(90/940) percentage(60/940) 0 0;
+    margin: percentage(95/940) percentage(60/940) 0 0;
   }
   ul {
     @extend %clearfix;
