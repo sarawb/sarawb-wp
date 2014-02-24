@@ -35,6 +35,9 @@ FORMS
   float: left;
   width: 75%;
   padding-right: 3.5%;
+  @include breakpoint(m) {
+    width: 65%;
+  }
 }
 
 #subscribe-email input {
@@ -56,6 +59,9 @@ FORMS
   float: left;
   padding-left: 3.5%;
   width: 25%;
+  @include breakpoint(m) {
+    width: 35%;
+  }
 }
 
 #subscribe-submit input[type="submit"] {

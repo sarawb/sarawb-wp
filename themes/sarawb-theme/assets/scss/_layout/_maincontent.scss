@@ -93,6 +93,11 @@ MAIN CONTENT
 
 #comments {
   margin: $spacing-xl 0 0;
+  @include breakpoint(m) {
+    p {
+      font-size: 1em;
+    }
+  }
   ol {
     list-style-type: none;
     margin: 0;

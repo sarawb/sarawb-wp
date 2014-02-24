@@ -14,6 +14,7 @@ body {
   max-width: 940px;
   margin: 0 auto;
   // width: 100%;
+  overflow: hidden;
   @extend %clearfix;
   @include breakpoint(xxl) {
     margin: 0 30px;
