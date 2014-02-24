@@ -71,6 +71,7 @@ FORMS
   font-size: 90%;
   padding: 10px 15px;
   width: 100%;
+  -webkit-appearance: none;
   @include transition(.2s ease-in-out);
   &:hover, &:focus {
     background: darken($darkColor, 5%);
