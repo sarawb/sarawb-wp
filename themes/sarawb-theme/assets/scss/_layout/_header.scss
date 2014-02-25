@@ -18,7 +18,6 @@ HEADER
 .site__branding {
   @extend .grid2;
   @extend .left;
-  text-align: center;
   @include breakpoint(m) {
     width: 14.893617%;
     min-width: 50px;
