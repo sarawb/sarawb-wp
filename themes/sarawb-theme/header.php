@@ -3,25 +3,6 @@
 
 <head>
 
-  <!--
-
-  @@@@@@@@@@@@@@@@@  @@@   @@@          @@@
-  @@@@@@@@@@@@@@@@@  @@@   @@@@        @@@@
-         @@@         @@@   @@@ @      @ @@@
-         @@@         @@@   @@@  @@  @@  @@@
-         @@@         @@@   @@@   @@@    @@@
-         @@@         @@@   @@@          @@@
-         @@@         @@@   @@@          @@@
-         @@@         @@@   @@@          @@@
-
-  How much does a polar bear weigh? Just enough to break the ice.
-
-  Made with love in beautiful Saint Paul, Minnesota.
-
-  © 2013 Anythin’ Goes LLC and Timothy B. Smith.
-
-  -->
-
   <meta charset="utf-8" />
   <title><?php bloginfo('name'); ?>  | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
