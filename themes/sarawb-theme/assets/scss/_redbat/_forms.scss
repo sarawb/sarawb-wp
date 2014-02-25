@@ -214,7 +214,7 @@ FORMS
 }
 
 .gfield_description {
-        color: lighten($bodyColor, 45%);
+  color:  lighten($bodyColor, 45%);
   font-size: .8em;
   margin: 00.78125% 0 0;
 }
@@ -226,6 +226,12 @@ FORMS
 #gforms_confirmation_message {
   font-size: 1.2em;
   line-height: 160%;
+}
+
+.gform_description {
+  font-size: 1.1em;
+  line-height: 145%;
+  margin: 0 0 $spacing-l;
 }
 
 .validation_error {
