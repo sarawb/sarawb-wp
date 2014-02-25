@@ -224,11 +224,12 @@ FORMS
 }
 
 #gforms_confirmation_message {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 160%;
 }
 
 .gform_description {
+  display: block;
   font-size: 1.1em;
   line-height: 145%;
   margin: 0 0 $spacing-l;
