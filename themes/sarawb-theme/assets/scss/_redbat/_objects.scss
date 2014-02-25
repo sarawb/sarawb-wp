@@ -103,9 +103,6 @@ body {
 
 .grid7 {
   width: 57.4468085%;
-  @include breakpoint(xl) {
-    width: 75%;
-  }
 }
 
 .grid8 {
@@ -139,6 +136,11 @@ body {
 .centered {
   @extend %clearfix;
   margin: 0 auto;
+  &.grid7 {
+    @include breakpoint(xl) {
+      width: 75%;
+    }
+  }
 }
 
 @include breakpoint(m) {

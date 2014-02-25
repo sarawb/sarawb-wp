@@ -32,7 +32,7 @@
   <?php else : ?>
     <div class="grid8 columns">
       <h2>Let’s talk</h2>
-      <?php gravity_form('Contact Form', false, false, false, '', true); ?>
+      <?php gravity_form('Contact Form', false, true, false, '', true); ?>
     </div>
   <?php endif; ?>
   </div>
