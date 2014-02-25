@@ -33,7 +33,7 @@
     <div class="grid8 columns">
       <h2>Let’s talk</h2>
       <p>Tell me about your project, your conference, or just what's keeping you up at night.</p>
-      <?php gravity_form('Contact Form', false, false, false, '', true); ?>
+      <?php gravity_form('Contact Form', false, true, false, '', true); ?>
     </div>
   <?php endif; ?>
   </div>
