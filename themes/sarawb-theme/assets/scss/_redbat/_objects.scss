@@ -140,6 +140,9 @@ body {
     @include breakpoint(xl) {
       width: 75%;
     }
+    @include breakpoint(m) {
+      width: 100%;
+    }
   }
 }
 
