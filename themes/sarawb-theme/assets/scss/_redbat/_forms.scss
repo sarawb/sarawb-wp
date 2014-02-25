@@ -15,7 +15,7 @@ FORMS
     padding: 10px 20px;
     @include transition(.2s ease-in-out);
     @include breakpoint(m) {
-      padding: 10px;
+      padding: 8px;
     }
     &:focus {
       // box-shadow: inset 1px 1px 2px rgba(black, .1), 0 0 3px $darkColor;

@@ -19,6 +19,11 @@ HEADER
   @extend .grid2;
   @extend .left;
   text-align: center;
+  @include breakpoint(m) {
+    width: 14.893617%;
+    min-width: 50px;
+    margin-right: percentage(40/940);
+  }
   a {
     display: inline-block;
   }
@@ -44,14 +49,14 @@ HEADER
     float: none;
   }
   @include breakpoint(xs) {
-    width: 90%;
+    width: 92%;
   }
 }
 
 .site__nav {
   margin: percentage(82/940) percentage(60/940) 0 0;
   @include breakpoint(s) {
-    margin: percentage(95/940) percentage(60/940) 0 0;
+    margin: percentage(65/940) percentage(60/940) 0 0;
   }
   ul {
     @extend %clearfix;
@@ -77,4 +82,11 @@ HEADER
 
 .site__search {
   margin: percentage(70/940) 0 0;
+  @include breakpoint(s) {
+    margin: percentage(45/940) 0 0;
+    width: 40%;
+    input {
+      width: 100%;
+    }
+  }
 }
