@@ -19,8 +19,8 @@ body {
   @include breakpoint(xxl) {
     margin: 0 30px;
   }
-  @include breakpoint(m) {
-    margin: 0 10px;
+  @include breakpoint(s) {
+    margin: 0 20px;
   }
 }
 
